@@ -2,8 +2,8 @@
   hosts: local host
     - name: Print
       ansible.builtin.debug:
-          URL: {{ URL }}
+        URL: {{ URL }}
       vars:
-          URL: Printexample.com
+        URL: Printexample.com
 
 
