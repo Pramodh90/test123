@@ -17,7 +17,7 @@
       ansible.builtin.shell: uptime
       register: output
     - name: store in a standard variable
-      ansible.builtin.set_fact: uptime
+      ansible.builtin.set_fact:
       UPTIME: "{{output.stdout}}"
     - name: Print output of the shell
       ansible.builtin.debug:
