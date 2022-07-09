@@ -7,4 +7,21 @@
       vars:
         URL: printexample.com
 
+- name: Vars from inventory
+  hosts: localhost
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
+
+- name: facts
+  hosts: localhost
+  tasks:
+    - name: Print Hostname
+      ansible.builtin.debug:
+        msg: host name = {{ansible_hostname}}
+
+
+
+
 
