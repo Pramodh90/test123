@@ -1,6 +1,7 @@
 - name: Task level variables
   hosts: local host
-    - name: Print
+  tasks:
+    - name: Print URL
       ansible.builtin.debug:
         URL: {{ URL }}
       vars:
