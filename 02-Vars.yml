@@ -1,5 +1,5 @@
 - name: Task level variables
-  hosts: local host
+  hosts: localhost
   tasks:
     - name: Print URL
       ansible.builtin.debug:
