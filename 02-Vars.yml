@@ -1,22 +1,3 @@
-- name: Play from variables
-  hosts: localhost
-  vars:
-      URL: play.example.com
-  tasks:
-      - name: Print URL
-        ansible.builtin.debug:
-            msg: URL = {{ URL }}
-
-
-- name: Vars from files
-  hosts: localhost
-  vars_files:
-    - demo.yml
-  tasks:
-    - name: Print URL
-      ansible.builtin.debug:
-          msg: URL = {{ URL }}
-
 - name: Task level variables
   hosts: local host
   vars:
