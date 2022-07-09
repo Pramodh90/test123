@@ -16,3 +16,11 @@
     - name: Print URL
       ansible.builtin.debug:
           msg: URL = {{ URL }}
+
+- name: Task level variables
+  hosts: local host
+  vars:
+      URL: Bommi.com
+    - name: Print
+      ansible.builtin.debug:
+          URL: {{ URL }}
