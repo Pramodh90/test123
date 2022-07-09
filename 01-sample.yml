@@ -4,6 +4,3 @@
       -name: Print Hello
         ansible.builtin.debug:
           msg:Hello
-      -name: Print fruit
-       debug:
-         msg: Apple
