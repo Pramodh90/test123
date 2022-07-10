@@ -1,3 +1,7 @@
 - name: Hello from role
   ansible.builtin.debug:
     msg: Hello from role
+
+- name: Print the URL from default
+  ansible.builtin.debug:
+    msg: msg= {{ URL }}
