@@ -2,6 +2,6 @@
   ansible.builtin.debug:
     msg: Hello from role
 
-- name: Print the URL from default
+- name: Print the URL
   ansible.builtin.debug:
     msg: URL = {{ URL }}
