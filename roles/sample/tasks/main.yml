@@ -4,4 +4,4 @@
 
 - name: Print the URL
   ansible.builtin.debug:
-    msg: URL = {{ URL }}
+    msg: URL = {{URL}}
